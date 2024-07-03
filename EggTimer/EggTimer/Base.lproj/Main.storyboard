@@ -50,7 +50,11 @@
                                                         <fontDescription key="fontDescription" type="system" weight="black" pointSize="18"/>
                                                         <state key="normal" title="Soft"/>
                                                         <connections>
+<<<<<<< HEAD
                                                             <action selector="hardnessSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JKa-qj-ZHM"/>
+=======
+                                                            <action selector="hardnessSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JRd-Vc-YaX"/>
+>>>>>>> ba04124eb17dcc059c03de6a5cac333984cb975a
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -76,7 +80,11 @@
                                                         <fontDescription key="fontDescription" type="system" weight="black" pointSize="18"/>
                                                         <state key="normal" title="Medium"/>
                                                         <connections>
+<<<<<<< HEAD
                                                             <action selector="hardnessSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Ma-FR-b25"/>
+=======
+                                                            <action selector="hardnessSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qgr-hB-K9J"/>
+>>>>>>> ba04124eb17dcc059c03de6a5cac333984cb975a
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -102,7 +110,11 @@
                                                         <fontDescription key="fontDescription" type="system" weight="black" pointSize="18"/>
                                                         <state key="normal" title="Hard"/>
                                                         <connections>
+<<<<<<< HEAD
                                                             <action selector="hardnessSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mM7-dI-zQv"/>
+=======
+                                                            <action selector="hardnessSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZXE-hN-HLV"/>
+>>>>>>> ba04124eb17dcc059c03de6a5cac333984cb975a
                                                         </connections>
                                                     </button>
                                                 </subviews>
