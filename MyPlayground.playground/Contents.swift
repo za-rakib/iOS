@@ -1,17 +1,11 @@
+import UIKit
 
-// Don't change this
-var studentsAndScores = ["Amy": 10, "James": 40, "Helen": 50]
+let arr = [1, 2, 3, 4, 5]
 
-func highestScore(scores: [String: Int]) {
-  
-  // Find the highest score using the dictionary values
-  if let highestScore = scores.values.max() {
-      print(highestScore)
-  } else {
-      print("No scores available.")
-  }
+func addOne(n1: Int) -> Int {
+    return n1 + 1
 }
-
-// Don't change this
-highestScore(scores: studentsAndScores)
-
+ 
+arr.map({
+   (n1) in (n1 + 1)
+})

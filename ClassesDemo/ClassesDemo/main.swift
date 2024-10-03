@@ -1,0 +1,5 @@
+let skeleon = Enemy()
+let dragon = Dragon()
+//skeleon.move()
+//dragon.talk(speech:" I am Dragon")
+dragon.attack()
