@@ -17,20 +17,40 @@ struct WeatherManager {
     }
     
     func performRequest (urlString : String){
-//        print(urlString)
+        //        print(urlString)
         if let url = URL(string: urlString){
             let session = URLSession(configuration: .default)
-               let task = session.dataTask(with: url) { (data, response, error) in
+            let task = session.dataTask(with: url) { (data, response, error) in
                 if error != nil{
                     print(error!)
                     return
                 }
                 if let safeData = data{
-                    let dataString = String(data: safeData, encoding: .utf8)
-                    print(dataString!)
+                    parseJSON(weatherData: safeData)
                 }
             }
             task.resume()
         }
     }
+    
+    func parseJSON(weatherData:Data){
+        let decode = JSONDecoder()
+        do {
+            let decodeData = try decode.decode(WeatherData.self, from: weatherData)
+            let id =  decodeData.weather[0].id
+            let temp = decodeData.main.temp
+            let name = decodeData.name
+            
+            let weather = WeatherModel(conditionId: id, cityName: name, tempeature: temp)
+            
+            print(weather.conditionName)
+            
+            //            print(getConditionName(weatherId: id))
+        }
+        catch{
+            print(error)
+        }
+    }
+    
+    
 }
