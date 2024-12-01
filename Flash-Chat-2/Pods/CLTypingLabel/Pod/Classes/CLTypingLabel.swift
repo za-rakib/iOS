@@ -136,7 +136,7 @@ import UIKit
         setTextWithTypingAnimation(stoppedSubstring, attributes ,charInterval, false, currentDispatchID)
     }
     
-    // MARK: - 
+    // MARK: -
     // MARK: Set Text Typing Recursive Loop
     
     private func setTextWithTypingAnimation(_ typedText: String, _ attributes: Dictionary<NSAttributedString.Key, Any>?, _ charInterval: TimeInterval, _ initial: Bool, _ dispatchID: Int) {
