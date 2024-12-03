@@ -3,7 +3,8 @@ platform :ios, '13.0'
 target 'Flash Chat iOS13' do
   # Enable modular headers for compatibility
   use_modular_headers!
-
+  use_frameworks! :linkage => :static
+  
   # Pods for Flash Chat iOS13
   pod 'CLTypingLabel', '~> 0.4.0'
   pod 'FirebaseAuth'
