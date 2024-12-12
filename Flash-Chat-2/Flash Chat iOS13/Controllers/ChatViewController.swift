@@ -16,10 +16,11 @@ class ChatViewController: UIViewController {
     
     
     var message : [Message] = [
-        Message(sender: "1@2.com", body: "hiii"),
-        Message(sender: "1@3.com", body: "hlw"),
-        Message(sender: "1@4.com", body: "Yess broo")
+        Message(sender: "1@2.com", body: "Hey! How's it going"),
+        Message(sender: "1@3.com", body: "Pretty good! Just finished a project at work"),
+        Message(sender: "1@4.com", body: "Will do! Thanks, guys!")
     ]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
